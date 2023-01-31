@@ -1,6 +1,6 @@
 ﻿namespace GenericApi
 {
-    public class Amazon : IShopping<Amazon>
+    public class Amazon : IShopping
     {
         public string AddItem()
         {
@@ -8,7 +8,7 @@
         }
     }
 
-    public class Trendyol : IShopping<Trendyol>
+    public class Trendyol : IShopping
     {
         public string AddItem()
         {
@@ -16,7 +16,7 @@
         }
     }
 
-    public class N11 : IShopping<N11>
+    public class N11 : IShopping
     {
         public string AddItem()
         {
@@ -24,7 +24,7 @@
         }
     }
 
-    public class Ebay : IShopping<Ebay>
+    public class Ebay : IShopping
     {
         public string AddItem()
         {
@@ -32,7 +32,7 @@
         }
     }
 
-    public class Hepsiburada : IShopping<Hepsiburada>
+    public class Hepsiburada : IShopping
     {
         public string AddItem()
         {

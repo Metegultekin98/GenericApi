@@ -8,11 +8,12 @@ var services = builder.Services;
 
 services.AddControllers();
 
-services.AddScoped<IShopping<Amazon>, Amazon>();
-services.AddScoped<IShopping<Trendyol>, Trendyol>();
-services.AddScoped<IShopping<N11>, N11>();
-services.AddScoped<IShopping<Ebay>, Ebay>();
-services.AddScoped<IShopping<Hepsiburada>, Hepsiburada>();
+services.AddScoped<IShoppingProvider, ShoppingProvider>();
+services.AddScoped<IShopping, Amazon>();
+services.AddScoped<IShopping, Trendyol>();
+services.AddScoped<IShopping, N11>();
+services.AddScoped<IShopping, Ebay>();
+services.AddScoped<IShopping, Hepsiburada>();
 
 services.AddSwaggerGen();
 
